@@ -1,0 +1,78 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: #696969;
+}
+
+.transbox {
+	margin: 2%;
+	background-color: $trans-color;
+	border: 1px solid black;
+	@include border-radius(8px);
+	opacity: random(4)/5;
+	h1,
+	h2,
+	p{
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+}
+
+.trans-left {
+	@extend .transbox;
+	background-color: #E0FFFF;
+}
+
+.trans-right {
+	@extend .transbox;
+  background-color: #00FF7F;
+}
+
+.main-cont {
+
+max-width: 970px;
+margin: 0 auto;
+}
+
+.content {
+	background-image: url('../img/slats2.png');
+	background-size: cover;
+	padding: 30px 20px 0px 20px;
+	.thumbdisp{
+		background-color: $back-color;
+		margin: 0 -20px;
+		padding: 1px 20px 20px 20px;
+		h1{
+			color: $light-font;
+		}
+		.thumbnails{
+			overflow: hidden;
+			text-align: center;
+			height: auto;
+			img{
+				display:inline-block;
+			    max-width: 100%;
+			    margin-right: 8px;
+			    margin-left: 8px; 			
+			}
+		}
+	}
+	.infos{
+		overflow: hidden;
+    	.leftp{
+    		width: 49%;
+    		float: left;
+    	}
+    	.rightp{
+    		width: 49%;
+    		float: right;
+    	}
+	}
+}

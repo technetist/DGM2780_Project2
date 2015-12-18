@@ -1,0 +1,45 @@
+#footer{
+  overflow: hidden;
+  nav {
+    float:left;
+    width:100%;
+    background: $back-color;
+    overflow:hidden;
+    position:relative;
+    ul {
+      clear:left;
+      float:left;
+      list-style:none;
+      margin:0;
+      padding:0;
+      position:relative;
+      left:50%;
+      text-align:center;
+
+      li { 
+        display:block;
+        float:left;
+        list-style:none;
+        margin:0;
+        padding:0;
+        position:relative;
+        right:50%;
+
+        a {
+          display:block;
+          margin:0 0 0 1px;
+          padding:3px 10px;
+          text-decoration:none;
+          line-height:1.3em;
+          color: $light-font;
+        }
+        .divider {
+          position: absolute;
+          right:-1px;
+          top:5px;
+          color: $light-font;
+        }
+      }
+    }
+  }
+}

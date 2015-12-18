@@ -1,0 +1,60 @@
+#header{
+  background-color: $head-color;
+  height: auto;
+  overflow: hidden;
+  h1{
+    float: left;
+    padding-left: 12px;
+    color: $light-font;
+  }
+  nav {
+    overflow: hidden;
+    ul {
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      float: right;
+      }
+
+    li { 
+      float: left;
+      position: relative
+    }
+
+    a {
+      display: block;
+      padding: 14px 12px;
+      text-decoration: none;
+      text-align: center;
+      color: $link-color;
+    }
+
+    .divider {
+    position: absolute;
+    right:-1px;
+    top:15px;
+    color: $light-font;
+    }
+  } 
+}
+
+.clear {
+  clear: both;
+}
+
+
+.banwrap{
+background-color: $back-color;
+height:auto;
+width:auto;
+overflow:hidden;
+
+  img{
+    //height: auto; 
+    display: block;
+    max-width: 940px; 
+    max-height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
